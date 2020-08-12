@@ -1,9 +1,8 @@
 package com.example.printtest
 
-val a: Int = 1
-val b: Int = 2
+val n: Int = 3
 
 private fun main() {
-    println("sum of $a and $b is ${a + b}")
+    println("TimeTen  ${n*10}")
 }
 
