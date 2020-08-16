@@ -1,18 +1,18 @@
 package com.example.printtest
 
 fun main(){
-    class Programmer(private val name: String, private val yearOfExperience: Int){
-        fun getName(): String {
-            return name
-        }
 
-        fun getExperience(): Int {
-            return yearOfExperience
+    class MyInterfaceImpl: MyInterface{
+        override fun display() {
+            println("This is Phoenix MyInterface")
         }
-
     }
 
-    val programmer = Programmer("Phoenix", 15)
-    println(programmer.getName())
-    println(programmer.getExperience())
+    val myInterface = MyInterfaceImpl()
+    println(myInterface.display())
+
+}
+
+interface MyInterface {
+    fun display()
 }
